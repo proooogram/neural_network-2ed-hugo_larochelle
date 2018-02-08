@@ -1,9 +1,8 @@
 .. 注释
 
-前馈网络
+backpropagation
 ==========================================================
 
 .. toctree::
-   
-   artifical neuron
-   activation function
+
+

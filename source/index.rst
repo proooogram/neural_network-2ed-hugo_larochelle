@@ -7,7 +7,8 @@
    :maxdepth: 2
    :numbered:
 
-   Feedforward neural network/index
-   Training neural networks/index
+   1 Feedforward neural network/index
+   2 Training neural networks/index
+   3 Conditional random fields/index
 
 
