@@ -11,5 +11,6 @@
    2 Training neural networks/index
    3 Conditional random fields/index
    4 Training CRFs/index
+   5 Restricted Boltzmann machine/index
 
 
