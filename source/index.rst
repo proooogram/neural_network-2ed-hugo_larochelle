@@ -5,7 +5,9 @@
 
 .. toctree::
    :maxdepth: 2
+   :numbered:
 
-   Feedforward_network
+   Feedforward neural network/index
+   Training neural networks/index
 
 
