@@ -15,5 +15,6 @@
    6 Autoencoder/index
    7 Deep learning/index
    8 Sparse coding/index
+   9 Computer vision/index
 
 
