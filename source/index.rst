@@ -16,5 +16,6 @@
    7 Deep learning/index
    8 Sparse coding/index
    9 Computer vision/index
+   10 Natural language processing/index
 
 
