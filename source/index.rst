@@ -14,5 +14,6 @@
    5 Restricted Boltzmann machine/index
    6 Autoencoder/index
    7 Deep learning/index
+   8 Sparse coding/index
 
 
