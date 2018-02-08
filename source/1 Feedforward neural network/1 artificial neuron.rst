@@ -44,6 +44,7 @@
 
 .. image:: picture/1_01_artificial_neuron.pdf.page3.png 
    :scale: 50%
+ 
 | 这是一个神经元激活的二维可视化 
 | 想象我们有一个向量, (该向量)由两个元素x1和x2组成
 | 我们注意y 这我应写h(x)  (而不是y) 作为神经元的输出激活
