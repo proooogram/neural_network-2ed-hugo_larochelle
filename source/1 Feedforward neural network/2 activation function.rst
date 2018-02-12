@@ -1,4 +1,4 @@
-.. 注释     ~.xx.~  {}:针对xx 译者要说的话          ~.xx.~  {.}:针对xx 演讲者当时的动作         ~.xx.~  $.yy.# : 译者觉得要将xx换成yy才是对的, 可能是youtube自动翻译造成的错误、也可能是作者自己说错了、或别的啥
+.. 注释     ~.xx.~  {}:针对xx 译者要说的话          ~.xx.~  {.}:针对xx 演讲者当时的动作         ~.xx.~  #.yy.# : 译者觉得要将xx换成yy才是对的, 可能是youtube自动翻译造成的错误、也可能是作者自己说错了、或别的啥
 
 
 激活函数
@@ -33,7 +33,7 @@
    :scale: 50%
    
 | a more interesting choice is the sigmoid activation function
-| so it takes this form {.sigm(a)=1/(1+exp(-a))} ~.which_
+| so it takes this form {.sigm(a)=1/(1+exp(-a))} ~.which.~
 | #.so we'll.# some time noted as with acronym s-ig-m ~.and.~ {不需要"and"} for short {."sigm("}
 | and it simply takes the pre-activation {."(a)"}     and it computes this formula {."1/(1+exp(-a))"} here 
 | so it's 1 over 1 plus the exponential of minus the pre-activation 
@@ -79,7 +79,7 @@
 | and it's simply the maximum between 0 and the pre-activation {."max(0,a)"}
 | and so if we plot it {"沿着图像两条折线"}      
 | we get a straight line here {"沿着图像右边斜线"} like a linear function    if the input ~._is positive.~     ~.is greater than 0_.~    {."图像 x 【0,正无穷)" } 
-| and othersise it's just 0  {."沿着图像左边平线"}     so it's a ~._straight line.~     ~.horizontal line__
+| and othersise it's just 0  {."沿着图像左边平线"}     so it's a ~.straight line.~     ~.horizontal line.~
 | and if the ~.input.~ {应该是pre-activation} is negative {."图像负半边"}    it always  outputs 0 
 | so here it's {."Bounded"} only bounded by below by zero       
 | so it's always non-negative    
