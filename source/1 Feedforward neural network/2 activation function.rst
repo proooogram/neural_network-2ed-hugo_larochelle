@@ -87,7 +87,7 @@
 |  because the greater the pre-activation here      the greater the output will be   {."沿右边斜线向右上方"}
 | so ~.this can grow.~    #.this always grows.#     and    ~.can converge to.~    #.the output can converge to.# or diverge towards infinite     if the ~.input.~ {应该是pre-activation} goes  ~.towards the.~ #.towards.# of the infinity 
 | and in practice we see that it tends to give neurons {."Tends to give neurons ..."}                ~.that  are sparse.~        #.that have sparse activities.#         what we mean by that    is  that  it tends to get neurons  that are often exactly zero {."左边平线 y 0"}    which was not the case for the sigmoid or tanh     
-| the sigmoid or the tanh need to have ~.pre-activations.~ {这里应该是activation}   that are exactly a particular value 
+| the sigmoid or the tanh need to have pre-activations  that are exactly a particular value 
 | so in the sigmoid case to get zero ~.you need.~ #.it needs.# to be minus infinite 
 | so it doesn't happen really
 | and for the ~.times.~    #.tanh   it's.# to be equal to zero     in the pre-activation needs to be exactly zero 
