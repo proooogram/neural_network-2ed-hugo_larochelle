@@ -59,9 +59,9 @@
 | {开始讲右边XOR} 然而 我们注意到    它是如此一个简单的函数      如果 我们 在这个坐标轴上{右XOR 横坐标轴} 画     像我们在前一个幻灯片看到 的那样   对 x1非、x2 应用"与"函数   的结果.            而 在这个轴上{右XOR 纵坐标轴} 我们用 对 x1、x2非 的 "与"函数 的输出   作为 此坐标轴值.
 | 然后 这个点{左XOR 左下圈圈 } 和 这个点{左XOR 右上圈圈} 将被 坍塌到 一个单点{右XOR 左下圈圈}.   然后这个点{左XOR 左上三角形}  会对应到 那个点{右XOR 右下三角形}.  这个点{左XOR 右下三角形} 对应到 那个点{右XOR 右上三角形}.  
 | 所以 在这个案例中 实际上 我们能      在 圆圈们{右XOR 左下圈圈} 和 三角形们{右XOR 右上两个三角形} 之间        在 关联到类别0的点们 和 关联到类别1的点们 之间      画一个单直线{右XOR 虚斜直线}
-| 所以 这是在说 如果我们计算  我们输入向量的  一个修改的表示   一个更好的{'a "better" representation'}表示      则 此问题可以变成线性可分       
-| and this also suggest that  if we have  these {右XOR 两轴 两AND}  the ...sad... reperentation which is actually repsentable by a single neuron    that's the case for this AND function {右XOR 横轴AND} and this AND function {右XOR 纵轴AND}      we see before that we can actually model these two functions by a single neuron   
-| then this suggest that      by ~.having other neurons.~    #.connecting by other neurons.#   ~.which would.~      
-| so we have the neuron that compute this {右XOR 纵轴AND}    the neuron that compute that {右XOR 横轴AND}.      
-| if    ~.connect the these two neuron {右XOR 横轴AND 纵轴AND} to another neuron {右XOR XOR}.~      #.connecte {the  neuron} {右XOR XOR} directly to these artificial neurons {右XOR 横轴AND 纵轴AND} here.#     then we might able to compute ~.a function.~   #. ...s...l function.#   that require ~.more complicated computations.~  #. more complicated desicion surface .#    .
-| this will be the main inituition behind developing more complicated multi-layer neuron networks  which we will see in next video.
+| 所以 这是在说 如果我们计算  我们输入向量的  一个修改的表示   一个更好的{'a "better" representation'}表示      则 此问题可以变成线性可分 .
+| 这也建议 如果 我们有    完全 可 被 一个单神经元 表示的     这个{右XOR 纵AND}表示  另一个{右XOR 横AND}表示.   (这是 对于 这个 "与"函数{右XOR 横轴AND} 和  这个 "与"函数{右XOR 纵轴AND} 的案例.      之前 我们已经看到 我们确实能 用单神经元 建模 这两个函数. ) 
+| 那么    靠    有其他神经元  被其他神经元连接.       {  上一句 和 这句话 合起来  是 "如果 那么" 的结构:  如果 AND 可以被单神经元表示 则 用一个神经元表示AND  再用另一个神经元 连到 神经元and  而另一个神经元将可以执行异或 }      
+| 所以 我们 有 计算这个{右XOR 纵轴AND}的 一个神经元     计算那个{右XOR 横轴AND}的神经元. 
+| 如果     我们连接这两个神经元{右XOR 横轴AND 纵轴AND} 到另一个神经元 {右XOR XOR}          直接地 连接{神经元}{.右XOR XOR} 到 那些神经元{右XOR 横轴AND 纵轴AND}           那么我们或许能计算         需要更复杂计算的  某种函数            更复杂的决策表面
+| 这将是 在 开发 更复杂的 多层   神经网络  主要的直觉， 我们将在下一节视频中看到.
