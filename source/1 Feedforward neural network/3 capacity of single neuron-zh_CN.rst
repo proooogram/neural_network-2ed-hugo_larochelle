@@ -55,11 +55,11 @@
 | 在这个案例中 对于这个点{左XOR 左上三角形}  这儿{x2轴 1}我们有1  这儿{x1轴 0}我们有0.  对于这个点{左XOR 右下三角形}  这儿这个 x1是1  x2是0  .
 | 所以 在这个案例中 我们看到 我们不能只画一单个直线, 此直线实际上可以分离 在一边的所有这些0 和 在一边的所有1.  故此函数不是线性可分的.
 | 但 它实际上是非常非常简单的问题.
-| 所以 这{简单问题不能线性可分}表明  一个单人工神经元 对于许多 我们想要执行这种二分类的 问题 是 不足够的
-| however we known ~.it that's.~   #.it's.#  a such simple function  ~.that.~   #.if.# we had instead plot on this axis {右XOR 横坐标轴} the result of apply AND function over negation of x1 and x2  like we see in previous ...lin...        and on this axis {右XOR 纵坐标轴} ~.we actually draw the.~   #.we use as.# the value of this axis    the output of AND function over x1 and negation of x2 .
-| then this point {左XOR 左下圈圈 } and this point {左XOR 右上圈圈}  will be clasp over a single point {右XOR 左下圈圈} .    and then this point {左XOR 左上三角形} will correspond now to that point {右XOR 右下三角形}    and this point {左XOR 右下三角形} to that point {右XOR 右上三角形}.
-| and so in this case we can actually draw a single line {右XOR 虚斜直线} between the cirles {右XOR 左下圈圈} and trangles {右XOR 右上两个三角形}  between the points associated to class 0   and the points assocated to class 1 .
-| so what it saying is that  ~.if we get.~   #.if we compute.#     ~.an altinate repesentation.~     #.a better repsentation.#  of our input vector  the problem might be linearly sperateble .      
+| 所以 这{简单问题不能线性可分}表明  一个单人工神经元 对于许多 我们想要执行这种二分类的 问题 是 不足够的.
+| {开始讲右边XOR} 然而 我们注意到    它是如此一个简单的函数      如果 我们 在这个坐标轴上{右XOR 横坐标轴} 画     像我们在前一个幻灯片看到 的那样   对 x1非、x2 应用"与"函数   的结果.            而 在这个轴上{右XOR 纵坐标轴} 我们用 对 x1、x2非 的 "与"函数 的输出   作为 此坐标轴值.
+| 然后 这个点{左XOR 左下圈圈 } 和 这个点{左XOR 右上圈圈} 将被 坍塌到 一个单点{右XOR 左下圈圈}.   然后这个点{左XOR 左上三角形}  会对应到 那个点{右XOR 右下三角形}.  这个点{左XOR 右下三角形} 对应到 那个点{右XOR 右上三角形}.  
+| 所以 在这个案例中 实际上 我们能      在 圆圈们{右XOR 左下圈圈} 和 三角形们{右XOR 右上两个三角形} 之间        在 关联到类别0的点们 和 关联到类别1的点们 之间      画一个单直线{右XOR 虚斜直线}
+| 所以 这是在说 如果我们计算  我们输入向量的  一个修改的表示   一个更好的{'a "better" representation'}表示      则 此问题可以变成线性可分       
 | and this also suggest that  if we have  these {右XOR 两轴 两AND}  the ...sad... reperentation which is actually repsentable by a single neuron    that's the case for this AND function {右XOR 横轴AND} and this AND function {右XOR 纵轴AND}      we see before that we can actually model these two functions by a single neuron   
 | then this suggest that      by ~.having other neurons.~    #.connecting by other neurons.#   ~.which would.~      
 | so we have the neuron that compute this {右XOR 纵轴AND}    the neuron that compute that {右XOR 横轴AND}.      
