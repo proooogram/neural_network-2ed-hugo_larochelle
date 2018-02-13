@@ -12,20 +12,20 @@
 .. toctree::
 
 | pic 1 
-| in this video we'll discuss the capacity of a single neuron that is the complexity of the computations that it can perform.
-| so we've seen before that in 2 dimensions  
-| if we draw the ~.output or the activation.~ {. 图像 y1 h(x)} of a given neuron,    that will look something  like  this   
-| where we'll get some ridge {画出岭} between two parts of the space       where the ridge    is essentially defined by the orientation of the ridge  is defined by the vector w   
-| and     the bias will also determine the position of this ridge .
+| 在这个视频中 我们会讨论单神经元的能力 {这能力}即神经元能执行的计算的复杂性
+| 上次课， 我们已经看到 在二维空间， 
+|         如果我们画一个给定神经元的输出或激活{. 图像 y1 h(x)} ，  会看到像这样的图像，
+|         在这图像中 我们会获得 在空间两部分之间的 岭{画出岭} ，   在这图像中    岭   完全被岭的方向定义  被向量w定义    
+|         且 {在这图像中} 偏执决定了岭的位置
 
 | pic 1.5: capacity,decision boundary of neuron
-| so with a neuron that performs ~.a.~  #.this.# type of computation  
-| we could perform binary classification {."binary classification"}               
-|   ~.that is.~  #.if we use.# this sigmoidal activation function         we could inerpret the activation of a neuron as estimating   ~.the probability.~  {. "p(y = 1| x)"} that some input ~.x.~  {. "p(y = 1| x)"中的x} belongs to the class ~.1.~  {. "p(y = 1| x)"中的1 } .   
-| and so let's assume ~.environment.~ #..in binary classification.#    ~.y can be either 0 or 1.~   {. 手写 " y 属于 集合{0,1}"}
-| and then we could think of  ~.the output or the activation.~  {. "p(y = 1| x)"}  of a neuron as giving us what's the estimate of the ~.rear on.~ #..neuron.# that the input actually belongs to the category ~.1.~  {. "p(y = 1| x)"中的1 }. 
-| and then the ~.property.~ #..probability.# that will belong to category 2  ~.based on the neurons.~ estimate would just be 1 minus this {. "p(y = 1| x)"}. 
-| because probabilities must sum to 1.  
+| 带有 执行这种类型计算 的神经元
+| 我们能执行二分类 {."binary classification"}   
+| 如果我们用这个sigmoid激活函数   我们能解释 一个神经元的激活 为 估算   某个输入向量x {. "p(y = 1| x)"中的x} 属于类别1 的 概率{. "p(y = 1| x)"} .
+| 让我们假定 在二分类中 y为0或1  {. 手写 " y 属于 集合{0,1}"}
+| 然后我们考虑 一个神经元的输出或激活 {. "p(y = 1| x)"} 为 给我们                输入属于类别1{. "p(y = 1| x)"中的1 }  此神经元的估算是多少 .
+| 属于类别2的 概率估值 是 1减去这个{. "p(y = 1| x)"}.
+| 因为 概率必须和为1
 | and so we could do this if we use sigmoid   because sigmoid is a bound between 0 and 1. 
 | and so we also g...r...t  that we get the output of the  activation of neuron   a number which can interpret as propbility .  
 | so this in fact  exactly form for a classifier  is known as logistic regression classifier.  
