@@ -50,12 +50,12 @@
 | 这些例子函数能很容易的 被 一个单人工神经元 建模
 
 | pic 3 : XOR XOR 
-| however there are many problems in practice that are not will sperated linearly .   
-| actually they are very simple function that are not even linearly seprable .  so ...there... is another simple function     the XOR function .  so this is a function that output 0 if either both inputs x1 and x2 are 0  or they are both 1  and it only outputs 1 so for these two gays when the either one of the inputs are 1 .    
-| so in this case   here {x2轴 1} we have 1   here {x1轴 0} we have 0   for this point {左XOR 左上三角形}        here {x1轴 1} this one  x1 is 1  and x2 is 0  for this point {左XOR 右下三角形}.
-| and so in this case we see that we cannot draw just a single line {左XOR画分割点的各种一条直线}  that will actually separate on one side all ... be 0 and one side all ... 1.  so it's not linearly separateble .   
-| and yet ...say... actually very very simple problem .    
-| so this suggest that single artificial neuron will not be sufficient for many problems that we are want to perform this kind of binary classification.   
+| 然而 在实践中 有许多问题 它们不是线性可分的
+| 其实 他们是非常简单的函数   但不是线性可分的.    作为一个例子 另一个简单函数 异或函数{.左"XOR(x1,x2)"中的XOR}.    这是一个函数，  如果两个输入分量x1 x2都是0 {.左XOR,x1 x2,0 0} 或 都是1 {.左XOR,x1 x2,1 1}  则函数输出0 {.左XOR 两个圆圈}.  对于这两个家伙{.左XOR 两个三角形}, 当 输入分量 仅有一个 是1, 该函数输出1 {.左XOR 两个三角形} .
+| 在这个案例中 对于这个点{左XOR 左上三角形}  这儿{x2轴 1}我们有1  这儿{x1轴 0}我们有0.  对于这个点{左XOR 右下三角形}  这儿这个 x1是1  x2是0  .
+| 所以 在这个案例中 我们看到 我们不能只画一单个直线, 此直线实际上可以分离 在一边的所有这些0 和 在一边的所有1.  故此函数不是线性可分的.
+| 但 它实际上是非常非常简单的问题.
+| 所以 这{简单问题不能线性可分}表明  一个单人工神经元 对于许多 我们想要执行这种二分类的 问题 是 不足够的
 | however we known ~.it that's.~   #.it's.#  a such simple function  ~.that.~   #.if.# we had instead plot on this axis {右XOR 横坐标轴} the result of apply AND function over negation of x1 and x2  like we see in previous ...lin...        and on this axis {右XOR 纵坐标轴} ~.we actually draw the.~   #.we use as.# the value of this axis    the output of AND function over x1 and negation of x2 .
 | then this point {左XOR 左下圈圈 } and this point {左XOR 右上圈圈}  will be clasp over a single point {右XOR 左下圈圈} .    and then this point {左XOR 左上三角形} will correspond now to that point {右XOR 右下三角形}    and this point {左XOR 右下三角形} to that point {右XOR 右上三角形}.
 | and so in this case we can actually draw a single line {右XOR 虚斜直线} between the cirles {右XOR 左下圈圈} and trangles {右XOR 右上两个三角形}  between the points associated to class 0   and the points assocated to class 1 .

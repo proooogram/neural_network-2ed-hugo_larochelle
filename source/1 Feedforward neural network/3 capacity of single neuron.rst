@@ -50,10 +50,10 @@
 | so these sample functions can easily be model by a single artificial neuron .
 
 | pic 3 : XOR XOR 
-| however there are many problems in practice that are not will sperated linearly .   
-| actually they are very simple function that are not even linearly seprable .  so ...there... is another simple function     the XOR function .  so this is a function that output 0 if either both inputs x1 and x2 are 0  or they are both 1  and it only outputs 1 so for these two gays when the either one of the inputs are 1 .    
-| so in this case   here {x2轴 1} we have 1   here {x1轴 0} we have 0   for this point {左XOR 左上三角形}        here {x1轴 1} this one  x1 is 1  and x2 is 0  for this point {左XOR 右下三角形}.
-| and so in this case we see that we cannot draw just a single line {左XOR画分割点的各种一条直线}  that will actually separate on one side all ... be 0 and one side all ... 1.  so it's not linearly separateble .   
+| however there are many problems in practice that are not will separated linearly .   
+| actually they are very simple function that are not even a linearly seprable .  so as an example another simple function     the XOR {.左"XOR(x1,x2)"中的XOR} function      and  so this is a function that outputs 0 {.左XOR 两个圆圈} if either both inputs x1 and x2 are 0 {.左XOR,x1 x2,0 0} or they're both 1 {.左XOR,x1 x2,1 1} and it only outputs 1 so for these two gays {.左XOR 两个三角形} when there either one of the inputs are 1 {.左XOR 两个三角形}.    
+| so in this case   here {x2轴 1} we have 1   here {x1轴 0} we have 0   for this point {左XOR 左上三角形}.        and here {x1轴 1} this one  x1 is 1  and x2 is 0  for this point {左XOR 右下三角形}.
+| and so in this case we see that we cannot draw just a single line {左XOR试着画分割三角形和圆圈的各种一条直线 画不出}  that will actually separate on one side all ... be 0 and one side all ... 1.  so it's not linearly separateble .   
 | and yet ...say... actually very very simple problem .    
 | so this suggest that single artificial neuron will not be sufficient for many problems that we are want to perform this kind of binary classification.   
 | however we known ~.it that's.~   #.it's.#  a such simple function  ~.that.~   #.if.# we had instead plot on this axis {右XOR 横坐标轴} the result of apply AND function over negation of x1 and x2  like we see in previous ...lin...        and on this axis {右XOR 纵坐标轴} ~.we actually draw the.~   #.we use as.# the value of this axis    the output of AND function over x1 and negation of x2 .
