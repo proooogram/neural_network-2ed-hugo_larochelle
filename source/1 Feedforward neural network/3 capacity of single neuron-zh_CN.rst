@@ -26,27 +26,28 @@
 | 然后我们考虑 一个神经元的输出或激活 {. "p(y = 1| x)"} 为 给我们                输入属于类别1{. "p(y = 1| x)"中的1 }  此神经元的估算是多少 .
 | 属于类别2的 概率估值 是 1减去这个{. "p(y = 1| x)"}.
 | 因为 概率必须和为1
-| and so we could do this if we use sigmoid   because sigmoid is a bound between 0 and 1. 
-| and so we also g...r...t  that we get the output of the  activation of neuron   a number which can interpret as propbility .  
-| so this in fact  exactly form for a classifier  is known as logistic regression classifier.  
-| and  the weight performing  classification is that if the output of neuron   so in other words  ~.if.~ #.it is.# the estimate of propbility that x belong to the class 1  is greater than zero point five  
-| then we will category the input into the class or category 1  .   
-| another wise our classifier would ~.output.~ #.prediction.# the input belongs to class 0 .    
-| and so if we were to draw this in 2D  then ~.if we look at .~  #.what is known.#  as decision boundary     .  where the decision boundary is essentially the surface where some input can     equally belong to the class 0 or 1    equally belong to any 2 class
-| what we get acutally is that's the classifier is performing a linear classification  that is drawn a line between two regions   the region that is assoicial with one class       the other region that is assoicial with the other class     it's drawing a boundary which is actually linear.     
-| so in 2D  correspond to a line   and  in more dimensions it correspond to a hyperplan .   
-| so if every problem where we want to classify objects describe by input vectors into 2 diffenrent classes .   if we can draw a hyperplan or a line ~.into.~ #.between.#  these two type of objects   then a single artificial neuron could do that for us.  it could model that type of desicion .
+| 所以 如果用sigmoid 我们能做这 {神经元的激活 解释为 属于类别1的概率}  因为sigmoid介于0和1之间
+| {;它}总是向我们保证 在一个神经元的激活或输出    我们得到一个 能被解释为一个概率的 数
+| 实际上    一个分类器的 这精确的形式         是以   logistic回归分类器 {. "logistic regression classifier"}   被知道的
+| 它执行分类的 方式 是      如果神经元的输出      换句话说     如果神经元的 x属于类别1的概率 估值  大于0.5  {."if greater than 0.5"中的0.5}
+|       则我们会 归类 输入 到 类别1 {."predict class 1"中的1} .
+| 否则 我们的分类器将输出 输入属于类别0的 预测
+| 如果我们 在二维中 画这{右函数图像}      如果我们看这{."decision boundary"}即决策边界  {在这个函数图像中}此决策边界本质上是 某输入对等的属于0或1 对等的属于任意类别 的表面
+| 我们获得的实际上是    此分类器在执行一个线性分类        它{此分类器}画了 在两个区域间的 一条直线 {.右图像中灰白界线}     一个区域是和一个类别关联的  另一个区域是和另一类别关联的        它{此分类器}在画一个 实际为线性的 边界 
+| 直观上 {决策边界}是一条直线        在多维时 {决策边界}会是一个超平面 
+| 如果我们有一个   我们想 分  由输入向量描述的物体 到 两个不同类别 的    问题 .  如果我们能 画 一个超平面或一条直线 进 这两物体类别之间 .  那么 一个单人工神经元 能 为我们 做这{这个分类问题}. 它{此神经元}能 建模 这种决策过程.
+
 
 
 | pic 2 : or and and 
-| so there is few example of simple functions which can be model by a linear classifier .     
-| so if we have a binary inputs that are either zero or one     so we have x1 that can be 0 or 1     x2 that can be 0 or 1      
-| and then we want to model the OR function which take the OR of x1 and x2 .   
-| so for 0 OR 0  it will output 0  so that will be class 0.  and for 0 1 , 1 1 or 1 0  it will output 1 .     so the trangles are correspond to class 1      
-| ... we can see that if we draw this  we can easyly pass a line between all the circles and all the trangles    all the 0 and all the ones.
-| it's another function that'll be more complicated     AND function over negation over x1 and x2 .     then we get all the these gays {AND(x1_,..)图下三个小圈}  will be  of class 0  and this {AND(x1_,..)图下那个小三角形} will be class 1 .   and ... again we can pass line between the two classes.   
-| ... get another example but instead of negation of x2 {. AND(.., x2_}      where we get  a class 1 here {AND(..,x2_)图下三角形}    the others {AND(..,x2_)图下三个圈圈} are 0 .    again we can pass a straight line .
-| so these sample functions can easyly be model by a single artificial neuron 
+| 这是 一些   能被一个线性分类器建模的 简单函数的  例子
+| 如果我们有一个二维输入，该输入的 每维量为0或1  {.OR图像, x1 x2, 0 1}     故我们有 能为0或1的x1 {.OR图像, x1, 0 1}   能为0或1的x2{.OR图像, x2, 0 1} 
+| 然后我们想 建模    取x1或x2的{."OR(x1,x2)"}  "或"函数{."OR(x1,x2)"中的OR}   
+| 所以 对于 0 0    {.OR图像, x1,x2, 0 0}     该分类器会输出0{.OR图像, 左下角圈圈}  所以这是类别0          而 对于  1 0 , 1 1 or 0 1 {.OR图像, x1,x2,1 0,1 1,0 1} 该分类器会输出1 {.OR图像, 右侧三个三角形}.        所以 三角形们{.OR图像, 右侧三个三角形}相当于类别1
+| 好了 我们能看到 如果我们画这{.OR图像, 虚斜直线}      我们很容易  在 所有圆圈和所有三角形 所有0和所有1 之间 打通一条直线
+| 它是另一个 有点复杂的 函数{.AND(x1_,x2)}  取x1非、x2的与 .     然后 我们得到     所有这些家伙 {AND(x1_,..)图下三个小圈} 会是类别0           这个 {AND(x1_,..)图下那个小三角形} 会是类别1.   事实上 又一次  我们能 在两类别之间 打通一条直线{.AND(x1_,x2)图像, 虚斜直线} .
+| 我们有另一个例子 {也是"与"函数} 但x2取非    ，  此函数  在这{AND(..,x2_)图下三角形} 我们得到一个类别1   在其他处 {AND(..,x2_)图下三个圈圈} 是类别0.     我们也能 {在两个类别之间} 打通 一条直线 {.AND(x1,x2_)图像, 虚斜直线} .
+| 这些例子函数能很容易的 被 一个单人工神经元 建模
 
 | pic 3 : XOR XOR 
 | however there are many problems in practice that are not will sperated linearly .   
