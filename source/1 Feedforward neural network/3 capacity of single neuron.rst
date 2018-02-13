@@ -1,4 +1,10 @@
-.. 注释
+.. 注释     
+.. {;xx} : xx是译者添加的 作为补充   
+.. ~.xx.~  {}:针对xx 译者要说的话          
+.. ~.xx.~  {.}:针对xx 演讲者当时的动作         ;  "xx"表示演讲者标出了讲义中的xx 
+.. ~.xx.~  #.yy.# : 译者觉得要将xx换成yy才是对的
+.. ~.xx.~  #..yy.# : 译者觉得 youtube自动翻译造成的错误          
+.. ~.xx.~  ~..yy..~:  xx和yy意思是一样的。本来只需要xx出现，或yy出现，不需要同时出现。比如为了不同角度的表达
 
 单神经元能力
 ==========================================================
@@ -6,18 +12,20 @@
 .. toctree::
 
 | pic 1 
-| this video we will discuss capacity of single neuron that is complexcity of computation it can perform.
-| so we see before that in 2 demintions  
-| if we draw the output of activation of a giving neuron    there will be something look like  this   
-| ... we will get some ridge between two part of the space where the ridge essentionlly define by the ori...tation of ridge  define by vector w   
-| and bias also determe the persition of this ridge 
-| so with a neuron that perform this type of computation  
-| we could be called binary classification   ~.that is.~  #.if use.# sigmoid activation function     
-| we could inerpret the activation of neuron as estimating   the propbility that some input x belongs to the class 1    
-| so let's assume in binary classification  y can be etheir zero or one   
-| and  we could think of the output of the activation of neuron as giving us what's the estimate neuron that the input actually belong to the category one. 
-| and then the probility that will belong to category two ~.base on the neuron.~ that ... just be 1 minus this. 
-| because propbility must sum to 1.  
+| in this video we'll discuss the capacity of a single neuron that is the complexity of the computations that it can perform.
+| so we've seen before that in 2 dimensions  
+| if we draw the ~.output or the activation.~ {. 图像 y1 h(x)} of a given neuron,    that will look something  like  this   
+| where we'll get some ridge {画出岭} between two parts of the space       where the ridge    is essentially defined by the orientation of the ridge  is defined by the vector w   
+| and     the bias will also determine the position of this ridge .
+
+| pic 1.5: capacity,decision boundary of neuron
+| so with a neuron that performs ~.a.~  #.this.# type of computation  
+| we could perform binary classification {."binary classification"}               
+|   ~.that is.~  #.if we use.# this sigmoidal activation function         we could inerpret the activation of a neuron as estimating   ~.the probability.~  {. "p(y = 1| x)"} that some input ~.x.~  {. "p(y = 1| x)"中的x} belongs to the class ~.1.~  {. "p(y = 1| x)"中的1 } .   
+| and so let's assume ~.environment.~ #..in binary classification.#    ~.y can be either 0 or 1.~   {. 手写 " y 属于 集合{0,1}"}
+| and then we could think of  ~.the output or the activation.~  {. "p(y = 1| x)"}  of a neuron as giving us what's the estimate of the ~.rear on.~ #..neuron.# that the input actually belongs to the category ~.1.~  {. "p(y = 1| x)"中的1 }. 
+| and then the ~.property.~ #..probability.# that will belong to category 2  ~.based on the neurons.~ estimate would just be 1 minus this {. "p(y = 1| x)"}. 
+| because probabilities must sum to 1.  
 | and so we could do this if we use sigmoid   because sigmoid is a bound between 0 and 1. 
 | and so we also g...r...t  that we get the output of the  activation of neuron   a number which can interpret as propbility .  
 | so this in fact  exactly form for a classifier  is known as logistic regression classifier.  
