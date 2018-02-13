@@ -12,14 +12,18 @@
 
 .. toctree::
 
-| pic 1 
+.. image:: picture/1_03_capacity_of_single_neuron.pdf.page2-af.png
+   :scale: 50%
+
 | in this video we'll discuss the capacity of a single neuron that is the complexity of the computations that it can perform.
 | so we've seen before that in 2 dimensions  
 | if we draw the ~.output or the activation.~ {. 图像 y1 h(x)} of a given neuron,    that will look something  like  this   
 | where we'll get some ridge {画出岭} between two parts of the space       where the ridge    is essentially defined by the orientation of the ridge  is defined by the vector w   
 | and     the bias will also determine the position of this ridge .
 
-| pic 1.5: capacity,decision boundary of neuron
+.. image:: picture/1_03_capacity_of_single_neuron.pdf.page3-cdbn.png
+   :scale: 50%
+
 | so with a neuron that performs ~.a.~  #.this.# type of computation  
 | we could perform binary classification {."binary classification"}               
 |   ~.that is.~  #.if we use.# this sigmoidal activation function         we could inerpret the activation of a neuron as estimating   ~.the probability.~  {. "p(y = 1| x)"} that some input ~.x.~  {. "p(y = 1| x)"中的x} belongs to the class ~.1.~  {. "p(y = 1| x)"中的1 } .   
@@ -39,17 +43,21 @@
 | so if we have a problem where we want to classify objects described by input vectors into 2 diffenrent classes .   if we can draw a hyperplane or a line{.右图像中灰白界线} into the between  these two type of objects        then a single artificial neuron could do that{这个分类问题} for us.  it{此神经元} could model that type of desicion process.
 
 
-| pic 2 : or and and 
+.. image:: picture/1_03_capacity_of_single_neuron.pdf.page4-oaa.png
+   :scale: 50%
+
 | so here's few example of simple functions which can be modeled by a linear classifier .     
 | so if we have a binary inputs that are either 0 or 1 {.OR图像, x1 x2, 0 1}     so we have x1 that can be 0 or 1 {.OR图像, x1, 0 1}    x2 that can be 0 or 1 {.OR图像, x2, 0 1}     
 | and then we want to model the OR function {."OR(x1,x2)"中的OR} which takes the OR of x1 and x2 {."OR(x1,x2)"}.   
 | so for 0 0 {.OR图像, x1,x2, 0 0} it would output 0 {.OR图像, 左下角圈圈} so that would be class 0.  and for 1 0 , 1 1 or 0 1 {.OR图像, x1,x2,1 0,1 1,0 1}  it would output 1 {.OR图像, 右侧三个三角形}.     so the triangles{.OR图像, 右侧三个三角形} are correspond to class 1 .     
 | well we can see   that   if we draw this{.OR图像, 虚斜直线}   we can easily pass a line{.OR图像, 虚斜直线} between all the circles and all the triangles    all the 0 and all the ones.
-| it's another function a bit  more complicated     the AND function over negation over x1 and x2 {."AND(x1_,x2)"}.     then we get that all of these guys {AND(x1_,..)图下三个小圈}  will be  of class 0  and this {AND(x1_,..)图下那个小三角形} will be class 1 .   and indeed again we can pass a line{.AND(x1_,x2)图像, 虚斜直线} between the two classes.   
+| it's another function a bit  more complicated     the AND function over negation over x1 and x2 {."AND(!x1,x2)"}.     then we get that all of these guys {AND(!x1,..)图下三个小圈}  will be  of class 0  and this {AND(!x1,..)图下那个小三角形} will be class 1 .   and indeed again we can pass a line{.AND(!x1,x2)图像, 虚斜直线} between the two classes.   
 | and we  have another example but instead of negation of x2 {. AND(.., x2_}      where we get  a class 1 here {AND(..,x2_)图下三角形}  and  the others {AND(..,x2_)图下三个圈圈} are 0 .    again we can pass a straight line{.AND(x1,x2_)图像, 虚斜直线} .
 | so these sample functions can easily be model by a single artificial neuron .
 
-| pic 3 : XOR XOR 
+.. image:: picture/1_03_capacity_of_single_neuron.pdf.page5-xx.png
+   :scale: 50%
+
 | however there are many problems in practice that are not will separated linearly .   
 | actually they are very simple function that are not even a linearly seprable .  so as an example another simple function     the XOR {.左"XOR(x1,x2)"中的XOR} function      and  so this is a function that outputs 0 {.左XOR 两个圆圈} if either both inputs x1 and x2 are 0 {.左XOR,x1 x2,0 0} or they're both 1 {.左XOR,x1 x2,1 1} and it only outputs 1 so for these two gays {.左XOR 两个三角形} when there either one of the inputs are 1 {.左XOR 两个三角形}.    
 | so in this case   here {x2轴 1} we have 1   here {x1轴 0} we have 0   for this point {左XOR 左上三角形}.        and here {x1轴 1} this one  x1 is 1  and x2 is 0  for this point {左XOR 右下三角形}.
