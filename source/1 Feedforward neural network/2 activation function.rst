@@ -1,72 +1,72 @@
-.. 注释     ~.xx.~  {}:针对xx 译者要说的话          ~.xx.~  {.}:针对xx 演讲者当时的动作         ~.xx.~  #.yy.# : 译者觉得要将xx换成yy才是对的, 可能是youtube自动翻译造成的错误、也可能是作者自己说错了、或别的啥
+.. 注释     ~.xx.~  {}:针对xx 译者要说的话          ~.xx.~  {.}:针对xx 演讲者当时的动作         ~.xx.~  $.yy.# : 译者觉得要将xx换成yy才是对的, 可能是youtube自动翻译造成的错误、也可能是作者自己说错了、或别的啥
 
 
 激活函数
 ==========================================================
 
 .. toctree::
-| in this video we'll see different potential choices for the activation function of neuron
+| 在这个视频中，我们将看到神经元激活函数的不同的可能选择
 
 .. image:: picture/1_02_activation_function.pdf.page2.png
    :scale: 50%
    
-| so we previously   the compuatation    that is made in the neuron      and we saw that involve this g function which we call the activation function      
-| so here we'll just see different popular choices for activation functions in the neuron networks 
+| 我们之前的:        神经元做的  计算    我们看到 包含了这个 被称为激活函数的 g函数
+| 在这 我们将只看 在神经网络中 对于激活函数的 不同的流行选择
 
 
 
 .. image:: picture/1_02_activation_function.pdf.page3-L.png
    :scale: 50%
 
-| a first choice is to simply use a linear activation function 
-| so in this case the activation function g  {.上图公式g(a)=a中的g}  takes its pre-activation and simply outputs it 	
-| so if we were to plot ~.the.~ #.this.# activation function you get a straight line {.上图的斜直线} like this 
-| so you doesn't perform any squashing {.squashing } of  the input ~.that is.~  
-| #. ~.it.~ {.activation function} takes.# the input and reproduces ~.it.~ {input}
-| so it won't be upper bounded or lower bounded   
-| and partly for that reason ~.it_'s {.activation function} not very interesting 
-| it doesn't introduce any nonlinearities in the computation of    the neuron   which might be useful for performing more complicated computations 
+| 第一个选择是 简单地用一个线性激活函数
+| 在这个案例中 激活函数g {.上图公式g(a)=a中的g}  取神经元的预激活值 并 简单地输出预激活值
+| 如果我们画这个激活函数    你得到 这样的一条直线  {.上图的斜直线} 
+| 故你没有执行任何 {对}输入的 挤压 {.squashing } 
+| 激活函数 取输入 并 重新产生输入  {上一句和这一句 需要跟原视频核对一下}
+| 故它没有上界或下界  
+| 并且这激活函数是无趣的 部分因为这个原因 {无界?}
+| 在神经元的计算中，该激活函数不产生任何非线性，而非线性或许 对于执行更复杂的计算 是有用的
 
 
 
 .. image:: picture/1_02_activation_function.pdf.page4-S.png
    :scale: 50%
    
-| a more interesting choice is the sigmoid activation function
-| so it takes this form {.sigm(a)=1/(1+exp(-a))} ~.which.~
-| #.so we'll.# some time noted as with acronym s-ig-m ~.and.~ {不需要"and"} for short {."sigm("}
-| and it simply takes the pre-activation {."(a)"}     and it computes this formula {."1/(1+exp(-a))"} here 
-| so it's 1 over 1 plus the exponential of minus the pre-activation 
-| and so if we draw {"function image"} this function   what we see is {"see" 还是 "is" ? } that it will squash {."squash"} the ~.neurons of the.~ #.neuron's.#  pre-activation   between 0 and 1
-| we see {"image: y [0,1]"} that all output values are between 0 and 1 here 
-| and so the bigger the pre-activation {."曲线 x right"}    the more it will saturate towards 1
-| and smaller the #.pre.# activation {."曲线 x往左"} towards minus infinite    the more it will saturate towards 0 {."曲线 y 0"} instead
-| so this neuron is always positive {."positive"}   because it's always strictly greater {."image y 0 上"} than 0
-| it's bounded {."Bounded"} ~.that is the output of neuron.~ #.the activation of the neuron cannot be smaller than 0    nor  greater than 1  {."曲线 y 0往下  1往上  "} 
-| and this activation function is strictly increasing 
-| that is    the bigger pre-activation    the higher the activation of the neuron will be  
+| 一个更有趣的选择是 sigmoid 激活函数
+| 它取这个形式 {.sigm(a)=1/(1+exp(-a))}
+| 所以我们有时 用首字母缩写sigm 作为简写 {."sigm("}
+| 它简单的取预激活值  {."(a)"}  ，然后它计算这个公式 {."1/(1+exp(-a))"} 
+| 所以它是 1 除以   1 加 e的负激活值方 
+| 如果我们画这个函数 {.函数图像} ，我们看到的是 该激活函数 将挤压{."squash"} 神经元预激活值 {到} 0和1之间 
+| 我们看到所有的输出值是 在0到1之间 {"曲线 y [0,1]"}
+| 预激活值越大 {."曲线 x往右"}  激活值越趋向于1
+| 预激活值越小 趋向负无穷  {."曲线 x往左"}  而激活值越趋向于0 {."曲线 y 0"} 
+| 所以这个神经元总是正的  {."positive"} 因为它总是严格大于0 {."图像 y 0往上"}
+| 它是有界的 {."Bounded"} 神经元的激活值不能小于0 也不能大于1  {."曲线: y 0往下,  1往上  "} 
+| 并且这个激活函数是严格递增
+| {这是说} 预激活值越大 神经元的激活值将越高
 
 
 
 .. image:: picture/1_02_activation_function.pdf.page5-TH.png
    :scale: 50%
    
-| another popular choice is the     hyperbolic tangent  or   tange   
-| so it's a t-a-n-h for short {."tanh"} 
-| and it's slightly more complicated 
-| it also involves  an exponential {."exp(a)"}
-| so one form is this form  here  {."(exp(a)-exp(-a))/(..+..)"}       
-|     ~.what's.~  #.where.#  the exponential the pre-cativation   minus   the exponential of minus the pre-activation    divided by    the sum of   the exponential of the pre-activaion     plus    the exponential of minus the pre-activation   
-| and it can also be {."(exp(2a)-1)/(..+1)"} written in this form    which is more convenient     because it computes just one exponential    
-| so 用这个 {."(exp(2a)-1)/(..+1)"}  {这句话 听不出来 youtube的自动翻译也是不对的}
-| so it might be more computationally efficient 
-| and this {."(exp(2a)-1)/(..+1)"} is just obtained by multiplying by the exponential of the pre-activation {. 分子 分母"(exp(a)-exp(-a))/(..+..)"} at the numerator and the denominator of this formula here {. 分子 分母"(exp(a)-exp(-a))/(..+..)"} 
-| so ~.if you.~ #.we.# plot this function   we see {."图像 y [1,-1] "}   that now we get an output  which is constrained between minus 1 and 1 
-| so this neuron will say that   it squashes {."squash"} the neuron's pre-activation
-|       so this should be pre-activation here {."squashed ... input between" 中的input划掉 并改为pre-activation}          
-| between minus 1 and 1 
-| so it can be positive or negtive  {."... positive ... negative"}
-| it's also bounded      similarly like the sigmoid  activation function {."Bounded"}
+| 另一个流行的选择是双正切或叫tange  
+| 缩写成tanh  {."tanh"} 
+| 它稍复杂
+| 它也含有e {."exp(a)"}
+| 一个形式 是这个形式   {."(exp(a)-exp(-a))/(..+..)"}       
+|     e的{预}激活值  减去  e的负{预}激活值     除以    e的预激活值 加上 e的负激活值  
+| 也能写成这种形式 {."(exp(2a)-1)/(..+1)"}，这个形式更方便 因为它只计算了一个e的指数{分子或分母上只有一个e}   
+| 故 用这个 {."(exp(2a)-1)/(..+1)"}  {这句话 听不出来 youtube的自动翻译也是不对的}   它可能计算更有效 
+| {这行移到上一行末尾去了}
+| 在这个公式的分子和分母上 {. 分子 分母"(exp(a)-exp(-a))/(..+..)"}   乘以 e的激活值方 就能得到它 {."(exp(2a)-1)/(..+1)"} 
+| 我们画这个函数  我们看到 {."图像 y [1,-1] "}    现在我们得到  被约束在-1到+1之间的 一个输出
+| 所以 这个神经元说 它挤压 {."squash"} 神经元的预激活值    {到} -1和+1之间 
+|       这里{不是input，写错了} 应该是pre-activation    {."squashed ... input between" 中的input划掉 并改为pre-activation ； 视频中的课件有这样错误 其网站上的pdf课件已经更改了 无此错误}          
+| {此行移动到 上上一行末尾了}
+| 所以激活值可以是正的或负的 {."... positive ... negative"}
+| 和sigmoid激活函数类似，此激活值是有界的 {."Bounded"}
 | and it is also strictly increasing {."...increasing"}
 
 
@@ -74,27 +74,27 @@
 .. image:: picture/1_02_activation_function.pdf.page6-RL.png
    :scale: 50%
    
-| and the final popular choice for the activation function  is   what is called the rectified linear activation function 
-| so we noted reclin {."reclin(a)"} for short 
-| and it's simply the maximum between 0 and the pre-activation {."max(0,a)"}
-| and so if we plot it {"沿着图像两条折线"}      
-| we get a straight line here {"沿着图像右边斜线"} like a linear function    if the input ~._is positive.~     ~.is greater than 0_.~    {."图像 x 【0,正无穷)" } 
-| and othersise it's just 0  {."沿着图像左边平线"}     so it's a ~.straight line.~     ~.horizontal line.~
-| and if the ~.input.~ {应该是pre-activation} is negative {."图像负半边"}    it always  outputs 0 
-| so here it's {."Bounded"} only bounded by below by zero       
-| so it's always non-negative    
-| it's not upper bounded {."Not ... bounded"}    
-|  because the greater the pre-activation here      the greater the output will be   {."沿右边斜线向右上方"}
-| so ~.this can grow.~    #.this always grows.#     and    ~.can converge to.~    #.the output can converge to.# or diverge towards infinite     if the ~.input.~ {应该是pre-activation} goes  ~.towards the.~ #.towards.# of the infinity 
-| and in practice we see that it tends to give neurons {."Tends to give neurons ..."}                ~.that  are sparse.~        #.that have sparse activities.#         what we mean by that    is  that  it tends to get neurons  that are often exactly zero {."左边平线 y 0"}    which was not the case for the sigmoid or tanh     
-| the sigmoid or the tanh need to have pre-activations  that are exactly a particular value 
-| so in the sigmoid case to get zero ~.you need.~ #.it needs.# to be minus infinite 
-| so it doesn't happen really
-| and for the ~.times.~    #.tanh   it's.# to be equal to zero     in the pre-activation needs to be exactly zero 
-| in this case   there's  this whole range  {."左边平线 x (负无穷,0]"}  of pre-activations    which will output exactly zero 
-| so for this reason we often get zeros as the activation of the neuron across many different inputs 
-| and so we'll say that for that reason  this neuron will have sparse activations or sparse activities
+| 对于激活函数，最后的流行选择 是 叫 整流线性激活函数
+| 我们简写为reclin {."reclin(a)"}
+| 它简单的取 0和预激活值 中的最大值 {."max(0,a)"}
+| 如果我们画它 {"沿着图像两条折线"}            
+| 如果输入是大于0 {."图像 x 【0,正无穷)" }        我们得到  像一个线性函数的 一条直线  {"沿着图像右边斜线"}  
+| 否则为0 {."沿着图像左边平线"}    是一条水平线
+| 如果预激活值是负的  {."图像负半边"}  总是输出0
+| 所以它只有下界0
+| 它总是非负的
+| 它无上界 {."Not ... bounded"}  
+| 因为 预激活值越大 输出越大  {."沿右边斜线向右上方"}
+| 输出总是增长    如果预激活值趋向正无穷 输出能发散到正无穷  
+| 在实践中 我们看到 该函数 倾向于 给出 有稀疏激活的 神经元们 {."Tends to give neurons ..."}        意思是  该函数 倾向于 获得 经常精确为0的 神经元们  {."左边平线 y 0"}       这不同于sigmoid或tanh
+| sigmoid或tanh的预激活值是精确的一个特殊值{时，其激活值才是精确为0. 而reclin的预激活值为整个负半轴时，其激活值就精确为0}
+| 在sigmoid中， 获得0激活值 需要预激活值为负无穷， 这实际上不会出现
+|  {此行移动到 上一行末尾了}
+| 对于tanh， 要等于0激活值   需要预激活值精确为0
+| 在此函数中 预激活值的 这整个区间 {."左边平线 x (负无穷,0]"}   都精确输出0激活值
+| 由于这个原因 在许多不同的输入处的神经元 我们经常获得0作为该神经元的激活值
+| 并且 我会说 由于这个原因 这个神经元会有稀疏激活或稀疏活跃
 
 
 
-| and so those are four     different choices    popular choices   for the activation function of a neuron 
+| 这些是 对于神经元的激活函数的 四个 不同选择 流行选择 
