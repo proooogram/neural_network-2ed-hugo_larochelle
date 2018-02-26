@@ -23,7 +23,7 @@
 
 
 
-.. image:: picture/1_04_1.png
+.. image:: picture/1_04_multilayer_neural_network.pdf.page2-xx.png
    :scale: 50%
 
 in this video we'll formally introduce the multi-layer neural network. 
@@ -42,7 +42,7 @@ and finish  the computation of our more complicated function .
 so this will be the inspiration behind the use and development of multi-layer neural networks .
 
 
-.. image:: picture/1_04_2.png
+.. image:: picture/1_04_multilayer_neural_network.pdf.page3-shlnn.png
    :scale: 50%
 so let's look at this idea more formally  in the case of a single hidden layer .
 so what mean 
