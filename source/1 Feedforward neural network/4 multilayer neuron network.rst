@@ -23,7 +23,7 @@
 
 
 
-.. image:: picture/1_04_1.png
+.. image:: picture/1_04_multilayer_neural_network.pdf.page2-xx.png
    :scale: 50%
 
 在这个视频中 我们将正式介绍多层神经网络.
@@ -41,7 +41,7 @@
 从而 完成 更复杂函数的计算.
 这就是 多层神经网络的使用和开发 背后的 灵感
 
-.. image:: picture/1_04_2.png
+.. image:: picture/1_04_multilayer_neural_network.pdf.page3-shlnn.png
    :scale: 50%
 让我们 在单隐藏层的情况下 正式地看下这个想法 .
 so what mean 
