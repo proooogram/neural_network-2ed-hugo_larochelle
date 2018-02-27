@@ -88,3 +88,14 @@ so w(2)i here {Right img , between_Middle_1_and_top , w(2)i}   is the weight of 
 so we compute that {"f(x)=o(b(2)+w(2)T h(1)(x)":"w(2)T h(1)(x)"}  then we add the bias of the output unit {"f(x)=o(b(2)+w(2)T h(1)(x)":"b(2)", scalar var , not vector}  .
 and then we will also have a activation function {"f(x)=o(b(2)+w(2)T h(1)(x)":"o"}, and I'm going to note it o {"f(x)=o(b(2)+w(2)T h(1)(x)":"o"} for output activation function {"output activation function"}.
 and this is because we will typically make different choices   for the output activation function {"f(x)=o(b(2)+w(2)T h(1)(x)":"o"}     then for the hidden units {"h(x)=g(a(x))":g} in the neural network.
+
+.. image:: picture/1_04_multilayer_neural_network.pdf.page4-xxx.png
+   :scale: 50%
+   
+{review binary classfication}
+so if want to do binary classification , we can just use as the output activation the sigmoid activation function.
+and so this means  that at the output we would get the probability  of the input belonging to class 1 {p(y=1|x)}   .
+{start to : multi-class classification}
+but if we have multiple classes {"multi-class"}, if have more than two classes , then what we'll need to do is have multiple outputs {"multiple outputs"}.
+and specifically we want to have one output unit   at the output layer  per class .
+and now we'll   
