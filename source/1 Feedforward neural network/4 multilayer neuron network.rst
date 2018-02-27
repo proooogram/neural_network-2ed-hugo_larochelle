@@ -60,4 +60,13 @@ so W1 is the weight matrix for the first hidden layer .
 and similarly we will have biases {"b(1)i"}.
 and so the bias of the i-th {Middle_1_Lay h(x)i neuron} hidden unit will be bi     and the one here {"b(1)i":"(1)"}   and the exponent{"b(1)i":"(1)"} is to refer to the first hidden layer again.
 {start to explain Left}
-so whenever we are computing the pre-activation , we will actually have a vector {"a(x)=b(1)+W(1)x":"a(x)"} of pre-activation     where the i-th {"a(x)i=b(1)i+sum W(1)i,j xj":"a(x)i":"i"}
+so whenever we are computing the pre-activation , we will actually have a vector {"a(x)=b(1)+W(1)x":"a(x)"} of pre-activation     
+	where the i-th {"a(x)i=b(1)i+sum W(1)i,j xj":"a(x)i":"i"} element of that vector will the i-th pre-activation  for the i-th neuron in that hidden layer ,
+and i-th pre-activation will get    the i-th bias   plus  the weighted combination of all inputs xj  
+	and where xj will be multiplied  by its connection with the i-th neuron .
+and if we want to perform this computation {"a(x)i=b(1)i+sum W(1)i,j xj"} for each hidden unit .
+so in fact we can write it into matrix form {"a(x)=b(1)+W(1)x"} to obtain directly the pre-activation vector  {"a(x)=b(1)+W(1)x":"a(x)"}.
+and this {"a(x)=b(1)+W(1)x"} would only essentially correspond to taking the vector x {"a(x)=b(1)+W(1)x":x} multiplying it by our matrix w(1) {"a(x)=b(1)+W(1)x":w(1)} and then adding the whole vector of biases b(1) {"a(x)=b(1)+W(1)x":b(1)}.
+so indeed if we take x {M} and mutiply by w {M}, 
+	we will get is 
+		that for the i-th row  will get a term which corresponds to the sum of all the elements over that row of matrix w1 multiplied by the corresponding elements in the vector x.
