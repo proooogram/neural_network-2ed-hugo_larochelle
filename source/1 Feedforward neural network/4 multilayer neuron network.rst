@@ -76,3 +76,15 @@ then to compute the hidden layer activation {"Hidden layer activation"}		.
 we simply apply our activation function {"h(x)=g(a(x))":g} over all the elements in the vector {"h(x)=g(a(x))":a(x)} .
 so here in my notation {"h(x)=g(a(x))":g(a(x))} , I' assuming we're doing an element-wise application of the activation function g {"h(x)=g(a(x))":g} 
 	that we've chosen either the sigmoid or the tanh or reclin and so on.
+{start Left f(x)=o(b(2)+w(2)T h(1)(x)}
+and then finally we get an output activation {"f(x)=o(b(2)+w(2)T h(1)(x)":"f(x)"}    
+	which I will note f(x)   
+	by taking the hidden layer {"f(x)=o(b(2)+w(2)T h(1)(x)":h(1)(x)} .
+so this hidden layer , we'll call it h(1)(x)   , again 1 because we have a single hidden layer.	
+so we'll take that vector {"f(x)=o(b(2)+w(2)T h(1)(x)":h(1)(x)} of hidden units   
+	and    we'll multiply it by w(2)   
+		which is going to be the vector of _activations_>connections   between the output and all the hidden units .
+so w(2)i here {Right img , between_Middle_1_and_top , w(2)i}   is the weight of the connection   between the output unit{top neuron}  and the i-th hidden unit {middle_1_layer, h(x)i, i-th hidden neuron}.
+so we compute that {"f(x)=o(b(2)+w(2)T h(1)(x)":"w(2)T h(1)(x)"}  then we add the bias of the output unit {"f(x)=o(b(2)+w(2)T h(1)(x)":"b(2)", scalar var , not vector}  .
+and then we will also have a activation function {"f(x)=o(b(2)+w(2)T h(1)(x)":"o"}, and I'm going to note it o {"f(x)=o(b(2)+w(2)T h(1)(x)":"o"} for output activation function {"output activation function"}.
+and this is because we will typically make different choices   for the output activation function {"f(x)=o(b(2)+w(2)T h(1)(x)":"o"}     then for the hidden units {"h(x)=g(a(x))":g} in the neural network.
