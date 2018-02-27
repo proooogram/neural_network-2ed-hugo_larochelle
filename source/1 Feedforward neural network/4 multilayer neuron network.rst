@@ -70,3 +70,9 @@ and this {"a(x)=b(1)+W(1)x"} would only essentially correspond to taking the vec
 so indeed if we take x {M} and mutiply by w {M}, 
 	we will get is 
 		that for the i-th row  will get a term which corresponds to the sum of all the elements over that row of matrix w1 multiplied by the corresponding elements in the vector x.
+ok so we see that this {"a(x)=b(1)+W(1)x"} and this {"a(x)i=b(1)i+sum W(1)i,j xj"} is actually equivalent .
+{start Left h(x)=g(a(x))}
+then to compute the hidden layer activation {"Hidden layer activation"}		.
+we simply apply our activation function {"h(x)=g(a(x))":g} over all the elements in the vector {"h(x)=g(a(x))":a(x)} .
+so here in my notation {"h(x)=g(a(x))":g(a(x))} , I' assuming we're doing an element-wise application of the activation function g {"h(x)=g(a(x))":g} 
+	that we've chosen either the sigmoid or the tanh or reclin and so on.
