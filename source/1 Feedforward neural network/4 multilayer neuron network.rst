@@ -44,5 +44,20 @@ so this will be the inspiration behind the use and development of multi-layer ne
 
 .. image:: picture/1_04_multilayer_neural_network.pdf.page3-shlnn.png
    :scale: 50%
+   
 so let's look at this idea more formally  in the case of a single hidden layer .
-so what mean 
+so what mean ??by?that?? the hidden layer    is the computation of this representation which will make the problem more linearly separable .
+and so in the single layer neural network  we'll have the first part {Bottom2Layer} of the computation which will compute the representation.
+and then finally the computation of our output unit {Top1Layer}   which will perform the computation of our binary classification .
+so more formally when we're computing the hidden layer   we will compute again a pre-activation {"pre-activation"} function .
+and now in this hidden layer {Middle_1_Lay} we see   here{Middle_1_Lay}  we might have several neurons not just a single neuron .
+and so each of the i-th neuron {Middle_1_Lay ; h(x)i : "i" } _which_>that_    I will call whose    activation function   the output activation   will be h(x)i 
+	will be connected to all potential inputs  {Bottom_1_Lay}.
+and so the connection between the i-th  {Bottom_1_Lay and Middle_1_Lay ;   W(1)i,j : "i"  :: Middle_1_Lay i-th} hidden neuron with the j-th input {Bottom_1_lay j-th }
+	will be contained in some matrix    which we will call W and indicates opponent in parentheses one {W(1)i,j : "(1)"  }.
+so this {W(1)i,j : "(1)"} is to refer to the case where we have just a single hidden layer . 
+so W1 is the weight matrix for the first hidden layer .
+and similarly we will have biases {"b(1)i"}.
+and so the bias of the i-th {Middle_1_Lay h(x)i neuron} hidden unit will be bi     and the one here {"b(1)i":"(1)"}   and the exponent{"b(1)i":"(1)"} is to refer to the first hidden layer again.
+{start to explain Left}
+so whenever we are computing the pre-activation , we will actually have a vector {"a(x)=b(1)+W(1)x":"a(x)"} of pre-activation     where the i-th {"a(x)i=b(1)i+sum W(1)i,j xj":"a(x)i":"i"}
